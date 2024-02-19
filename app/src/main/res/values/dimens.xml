@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="smallSizeButtonWidth">130dp</dimen>
+    <dimen name="smallSizeButtonHeight">55dp</dimen>
+    <dimen name="buttonCorners">10dp</dimen>
+    <dimen name="mediumSizeButtonWidth">200dp</dimen>
+    <dimen name="mediumSizeButtonHeight">55dp</dimen>
+    <dimen name="editTextHeight">60dp</dimen>
+</resources>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Keline</string>
+    <string name="rightAddress">The Right Address\n For Shopping\n Anyday\n</string>
+    <string name="it_is_now_very_easy">it is now very easy to reach the\nbest quality among all the\nproducts on the internet</string>
+    <string name="start">Start</string>
+    <string name="kleine">Keline</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="let_s_login">Let\'s Login</string>
+    <string name="let_s_register">Let\'s Register</string>
+</resources>

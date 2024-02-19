@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelinelefttexture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.33" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/guidelinelefttexture"
+        app:layout_constraintDimensionRatio="1:3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/texture_left" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineLeftElipse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineRightElipse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineTopElipse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.19" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineBottomElipse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.52" />
+
+    <ImageView
+        android:id="@+id/elipse"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineBottomElipse"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRightElipse"
+        app:layout_constraintStart_toStartOf="@+id/guidelineLeftElipse"
+        app:layout_constraintTop_toTopOf="@+id/guidelineTopElipse"
+        app:srcCompat="@drawable/ellips"
+        app:layout_constraintDimensionRatio="1:1"/>
+
+    <TextView
+        android:id="@+id/tvRightAddressForShopping"
+        style="@style/h4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="115dp"
+        android:gravity="center"
+        android:text="@string/rightAddress"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineBottomElipse"
+        app:layout_constraintEnd_toEndOf="@+id/elipse"
+        app:layout_constraintStart_toStartOf="@+id/elipse"
+        app:layout_constraintTop_toTopOf="@+id/guidelinelefttexture" />
+
+    <TextView
+        android:id="@+id/tvQuality"
+        style="@style/h2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="@string/it_is_now_very_easy"
+        app:layout_constraintEnd_toEndOf="@+id/tvRightAddressForShopping"
+        app:layout_constraintStart_toStartOf="@+id/tvRightAddressForShopping"
+        app:layout_constraintTop_toBottomOf="@+id/tvRightAddressForShopping" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guidelinelefttexture"
+        app:srcCompat="@drawable/texture_right" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button"
+        style="@style/blueButtonStyle"
+        android:layout_width="@dimen/smallSizeButtonWidth"
+        android:layout_height="@dimen/smallSizeButtonHeight"
+        android:text="@string/start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tvQuality"
+        app:layout_constraintStart_toStartOf="@+id/tvQuality"
+        app:layout_constraintTop_toBottomOf="@+id/tvQuality" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

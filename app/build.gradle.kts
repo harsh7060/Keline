@@ -2,7 +2,6 @@ plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
     id("com.google.dagger.hilt.android")
-    id("kotlin-kapt")
     kotlin("kapt")
     id("kotlin-parcelize")
     id("androidx.navigation.safeargs.kotlin")
@@ -82,8 +81,7 @@ dependencies {
 
     //Dagger hilt
     implementation("com.google.dagger:hilt-android:2.45")
-    kapt("com.google.dagger:hilt-compiler:2.45")
-    kapt("androidx.hilt:hilt-compiler:1.0.0")
+    kapt("com.google.dagger:hilt-android-compiler:2.44")
 
     //Firebase
     implementation("com.google.firebase:firebase-auth:22.3.1")
@@ -92,4 +90,3 @@ dependencies {
 kapt {
     correctErrorTypes = true
 }
-
